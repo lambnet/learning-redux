@@ -7,9 +7,8 @@ const slice = createSlice({
   initialState: initialState,
   reducers: {
     apiUsersRequestSucceeded: (product, action) => {
-      product.lists = action.payload
+      product.push(action.payload)
     },
-
   }
 });
 

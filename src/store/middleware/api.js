@@ -8,13 +8,11 @@ const api = store => next => async action => {
   next(action)
   const { url, method, data, onSuccess, onError } = action.payload
   const response = await axios.request({
-    baseURL: 'https://jsonplaceholder.typicode.com', // handle cors
+    baseURL: 'https://jsonplaceholder.typicode.com',
     url,
     method,
     data
   })
-
-  // 
 
   store.dispatch(apiUsersRequestSucceeded(response.data))
 }
