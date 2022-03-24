@@ -1,0 +1,9 @@
+[
+  {
+    id = int,
+    items: [
+      {product} : qty,
+      ...  
+    ]
+  }
+]

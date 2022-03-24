@@ -1,0 +1,13 @@
+[
+  {
+    id: 1,
+    userName:string,
+    balance:int, 
+  },
+  ...
+  {
+    id:int,
+    userName:string,
+    balance:int
+  }
+]
